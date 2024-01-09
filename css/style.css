@@ -258,16 +258,10 @@ img{
     padding: 50px 0;
 }
 .choose-header .common-heading{
-    display:flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-.choose-header .common-heading h2{
-    flex-basis: 500px;
+    max-width: 470px;
 }
 .choose-header .common-heading p{
-    flex-basis: 500px;
-    line-height: 25px;
+    padding-top: 10px;
 }
 .choose-main{
     padding: 50px 0;
@@ -290,12 +284,15 @@ img{
     font-family: var(--font-family);
     font-weight: 600;
     color: var(--header-two);
+    transition: all linear 0.3s;
 }
 .choose-main .card .card-body p{
     font-size: 14px;
     font-family: var(--font-family);
     font-weight: 400;
     color: var(--eight-two);
+    transition: all linear 0.3s;
+    padding-top: 10px;
 }
 .choose-btn{
     margin-top: 15px;
@@ -313,22 +310,116 @@ img{
     align-items: center;
     border-radius: 50px;
     transition: all linear 0.3s;
+    text-transform: capitalize;
 }
 .choose-main .card{
     background: var(--white);
     transition: all linear 0.3s;
-}
-.choose-main .active{
-    background: var(--btn-color);
+    border-bottom: 3px solid var(--btn-color) !important;
+    border-left: 1px solid transparent !important;
+    border-right: 1px solid transparent !important;
 }
 .choose-main .card:hover{
-    background: var(--btn-color);
-    transition: all linear 0.3s;
+    border-bottom: 3px solid var(--btn-color) !important;
+    border-left: 1px solid var(--btn-color ) !important;
+    border-right: 1px solid var(--btn-color )!important;
 }
 .choose-main .card:hover .choose-btn a{
     background: var(--header);
-    color: var(--white);
     transition: all linear 0.3s;
 }
-
 /* choose part End */
+/* about us part start */
+#about-section{
+    background: var(--icon-bg);
+}
+.about-header{
+    max-width: 500px; 
+}
+.about-header .common-heading h2{
+    width: 90%;
+}
+.about-header .common-heading p{
+    width: 100%;
+    margin-top: 10px;
+}
+.about-item{
+    background: var(--btn-color);
+    margin: 0 5px;
+    border-bottom: 3px solid black !important;
+}
+.about-item h5{
+    font-size: 18px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    color: var(--header-two);
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+.about-item span{
+    display: inline-block;
+    font-size: 12px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--five-eight);
+}
+.about-item .img{
+    width: 70px;
+    height: 70px;
+}
+.about-item .img img{
+    width: 100%;
+    height: 100%;
+}
+.about-item p{
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--header-two);
+    padding-top: 15px;
+}
+.about-slider{
+    position: relative;
+}
+.about-slider .slick-dots li button{
+    display: none;
+}
+.about-slider .slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.about-slider .slick-dots li{
+    width: 10px;
+    height: 10px;
+    background-color: var(--eight-two);
+    border-radius: 50%;
+}
+.about-slider .slick-dots .slick-active{
+    background: var(--btn-color);
+}
+.about-slider .prev-arrow{
+    width: 40px;
+    height: 40px;
+    background: var(--btn-color);
+    border: none;
+    position: absolute;
+    z-index: 1;
+    bottom: 50px;
+    left: -50px;
+    color: var(--white);
+}
+.about-slider .next-arrow{
+    width: 40px;
+    height: 40px;
+    background:var(--btn-color);
+    border: none;
+    position: absolute;
+    z-index: 1;
+    bottom: 50px;
+    left: -100px;
+    color: var(--white);
+}
+/* about us part End */

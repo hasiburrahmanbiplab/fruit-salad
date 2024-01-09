@@ -25,16 +25,42 @@
       line-height: 50px;
     }
     /* choose part start */
-    .choose-header .common-heading {
-        gap: 40px;
-    }
+
     .choose-main .card .card-body h5{
         font-size: 16px;
     }
-  
+    /* about us */
 }
 @media (min-width:576px) and  (max-width:767.99px) {
+    .common-heading h2 {
+        font-size: 30px;
+    }
+    .banner-text{
+        padding-top: 60px;
+    }
     .banner-text h1{
         font-size: 40px;
       }
+      /* choose part start */
+   
+      /* about us */
+}
+@media (max-width:575px) {
+    .common-heading h2 {
+        font-size: 30px;
+    }
+    /* banner part start */
+    .banner-text{
+        padding-top: 45px;
+    }
+    .banner-text h1 {
+        width: 100%;
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .banner-text p {
+       width: 90%;
+    }
+    /* about us */
+
 }
