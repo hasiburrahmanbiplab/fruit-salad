@@ -1,0 +1,334 @@
+/* common css start */
+:root{
+    --font-family: 'Poppins', sans-serif;
+    --btn-color:#FB9333;
+    --five-seven:#575757;
+    --five-eight:#585858;
+    --eight-two:#828282;
+    --icon-bg:#FFE8C8;
+    --header:#2B2B2B;
+    --header-two:#333333;
+    --white:#ffffff;
+}
+body{
+    overflow-x: hidden;
+}
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    display: inline-block;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+}
+.w-100{
+  width: 100%;
+}
+img{
+    vertical-align: middle;
+    object-fit: cover;
+}
+.common-heading h2{
+    font-size: 40px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: var(--header);
+    line-height: auto;
+}
+.common-heading h2 span{
+    color: var(--btn-color);
+}
+.common-heading p{
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--eight-two);
+}
+/* common css end */
+/* header part start */
+#hero-part{
+    background: var(--white);
+}
+.navbar-toggler{
+    padding: 0;
+    border: 0;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.main-navbar .main-nav .nav-link{
+    font-size: 16px;
+    font-family: var(--five-eight);
+    font-weight: 600;
+    color: var(--five-seven);
+    text-transform: capitalize;
+}
+.main-navbar .main-nav .nav-link:hover{
+    color: var(--btn-color);
+}
+.main-navbar .main-nav .active{
+    color: var(--btn-color);
+}
+.navbar-btn a{
+    width: 100px;
+    height: 35px;
+    background: var(--btn-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: var(--white);
+    text-transform: capitalize;
+    border-radius: 50px;
+    transition:all linear 0.3s
+}
+.navbar-btn a:hover{
+    background: var(--header);
+    transition:all linear 0.3s
+}
+.banner-text{
+    max-width: 575px;
+}
+.banner-text .title{
+    width: 190px;
+    font-size: 16px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    padding: 5px;
+    color: var(--btn-color);
+    background: var(--icon-bg);
+}
+.banner-part{
+    background: var(--white);
+    margin: 30px 0;
+}
+.banner-text h1{
+    width: 100%;
+    font-size: 55px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    color: var(--header);
+    padding: 10px 0;
+    line-height: 55px;
+}
+.banner-text h1 span{
+    color: var(--btn-color);
+    background: transparent;
+}
+.banner-text p{
+    width: 78%;
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--eight-two);
+}
+.banner-btn{
+    margin-top: 20px;
+}
+.banner-btn a{
+    width: 110px;
+    height: 35px;
+    background: var(--btn-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: var(--white);
+    text-transform: capitalize;
+    border-radius: 50px;
+    transition:all linear 0.3s
+}
+.banner-btn a:hover{
+    background: var(--header);
+    transition:all linear 0.3s
+}
+.banner-counter{
+    width: 90%;
+    padding-top: 20px;
+}
+.banner-counter ul{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.banner-counter ul li span{
+    font-size: 12px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: var(--five-seven);
+    background: transparent;
+}
+.banner-counter ul li p{
+    font-size: 12px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: var(--eight-two);
+}
+.banner-image{
+    width: 100%;
+    height: 100%;
+    background:var(--white); 
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.banner-image .overly{
+    background: rgb(255, 255, 255);
+    width: 30%;
+    height: 25%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    border-radius: 10px 0 0 0;
+    z-index: 3;
+}
+.banner-image .overly p{
+    font-size: 10px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--eight-two);
+}
+.banner-image .overly-2{
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    background: rgb(255, 255, 255);
+}
+.banner-image .overly-2 ul li .emoji{
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+}
+.banner-image .overly-2 ul li .emoji img{
+    width: 100%;
+    height: 100%;
+}
+.banner-image .overly-2 ul li p{
+    font-size: 12px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--eight-two);
+}
+.banner-image .overly-2 ul li span{
+    font-size: 12px;
+}
+.banner-image span{
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: var(--five-eight);
+}
+.banner-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* header part end */
+/* choose part start */
+#choose-section{
+    background: var(--white);
+    padding: 50px 0;
+}
+.choose-header .common-heading{
+    display:flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.choose-header .common-heading h2{
+    flex-basis: 500px;
+}
+.choose-header .common-heading p{
+    flex-basis: 500px;
+    line-height: 25px;
+}
+.choose-main{
+    padding: 50px 0;
+}
+.choose-main .card .inner-icon{
+    width: 50px;
+    height: 50px;
+    background: var(--icon-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.choose-main .card .inner-icon .icon{
+    width: 30px;
+    height: 30px;
+}
+.choose-main .card .card-body h5{
+    font-size: 18px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    color: var(--header-two);
+}
+.choose-main .card .card-body p{
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--eight-two);
+}
+.choose-btn{
+    margin-top: 15px;
+}
+.choose-btn a{
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: var(--white);
+    width: 110px;
+    height: 40px;
+    background: var(--btn-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all linear 0.3s;
+}
+.choose-main .card{
+    background: var(--white);
+    transition: all linear 0.3s;
+}
+.choose-main .active{
+    background: var(--btn-color);
+}
+.choose-main .card:hover{
+    background: var(--btn-color);
+    transition: all linear 0.3s;
+}
+.choose-main .card:hover .choose-btn a{
+    background: var(--header);
+    color: var(--white);
+    transition: all linear 0.3s;
+}
+
+/* choose part End */
