@@ -47,7 +47,7 @@ img{
     object-fit: cover;
 }
 .common-heading h2{
-    font-size: 40px;
+    font-size: 35px;
     font-family: var(--font-family);
     font-weight: 500;
     color: var(--header);
@@ -111,7 +111,7 @@ img{
 }
 .banner-text .title{
     width: 190px;
-    font-size: 16px;
+    font-size: 14px;
     font-family: var(--font-family);
     font-weight: 500;
     padding: 5px;
@@ -423,3 +423,129 @@ img{
     color: var(--white);
 }
 /* about us part End */
+/* discount part start */
+#discount-section{
+    background: var(--white);
+}
+.discount-header{
+    max-width: 550px;
+}
+.discount-header > span{
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: var(--btn-color);
+    text-transform: uppercase;
+}
+.discount-main .card{
+    position: relative;
+    overflow: hidden;
+}
+.discount-main .card .overly{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: #00000083;
+    padding: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    overflow: hidden;
+}
+.discount-main .card:hover .overly{
+    width: 100%;
+    transition: ease-in-out 0.3s;
+    opacity: 1;
+    visibility: visible;
+}
+.discount-main .card .overly p{
+    width: 200px;
+    font-size: 12px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--white);
+    text-transform: capitalize;
+    
+}
+.discount-main .card .overly span{
+    width: 100px;
+    font-size: 20px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: var(--white);
+    text-transform: capitalize;
+}
+/* discount part End */
+/* subscribe part start */
+#subscribe-section{
+    background: var(--icon-bg);
+    position: relative;
+    padding: 50px  0;
+    z-index: 1;
+}
+#subscribe-section::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(../image/subscribe-banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: var(--icon-bg);
+    z-index: -1;
+}
+.subscribe-text{
+  max-width: 486px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subscribe-text span{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--btn-color);
+    font-family: var(--font-family);
+    text-transform: uppercase;
+    display: block;
+    padding-bottom: 10px;
+}
+.subscribe-email{
+    width: 100%;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+    margin-top: 50px;
+    border-bottom: 3px solid var(--btn-color);
+}
+.subscribe-email input{
+    background: transparent;
+    border: 0;
+}
+.subscribe-email input::placeholder{
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--five-seven);
+}
+.subscribe-btn a{
+    width: 80%;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:var(--btn-color);
+    border-radius: 50px;
+    color: var(--white);
+}
+/* subscribe part End */
