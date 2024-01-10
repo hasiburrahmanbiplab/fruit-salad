@@ -394,7 +394,7 @@ img{
 .about-slider .slick-dots li{
     width: 10px;
     height: 10px;
-    background-color: var(--eight-two);
+    border: 1px solid var(--btn-color);
     border-radius: 50%;
 }
 .about-slider .slick-dots .slick-active{
@@ -549,3 +549,97 @@ img{
     color: var(--white);
 }
 /* subscribe part End */
+/* footer part start */
+#footer-section{
+    background: var(--white);
+}
+.footer-logo .common-heading p{
+    padding: 15px 0 15px;
+    max-width: 300px;
+}
+.copyright p{
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--five-eight);
+}
+.copyright a{
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--btn-color);
+}
+.footer-main .feature h5{
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: var(--btn-color);
+    text-transform: capitalize;
+    padding-bottom: 5px;
+}
+.footer-main .feature ul li{
+    display: block;
+    margin-bottom: 10px;
+}
+.footer-main .feature ul li a{
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--eight-two);
+}
+.footer-main .feature ul li a:hover{
+    color: var(--btn-color);
+}
+.footer-main .contact h5{
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: var(--btn-color);
+    text-transform: capitalize;
+    padding-bottom: 5px;
+}
+.footer-main .contact ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-main .contact ul li .icon{
+    color: var(--btn-color);
+    padding-top: 5px;
+}
+.footer-main .contact ul li p{
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--eight-two);
+}
+.footer-main .contact ul li a{
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--eight-two);
+    text-transform: capitalize;
+}
+.footer-main .contact ul li a:hover{
+    color:rgb(0, 0, 255);
+}
+.footer-main .contact ul li{
+    display: flex !important;
+    gap: 10px;
+}
+.footer-main .social-contact ul{
+    display: flex;
+    gap: 20px;
+}
+.footer-main .social-contact ul li a{
+    font-size: 20px;
+    color: var(--btn-color);
+}
+.footer-main .social-contact p{
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--eight-two);
+    padding-top: 10px;
+}
+/* footer part End */
